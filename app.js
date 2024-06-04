@@ -9,4 +9,3 @@ var telefono = prompt("Ingresa el número de teléfono");
 var seguro = prompt("¿Tiene seguro social? Responda sí o no");
 console.log("Buscar alumno");
 console.log("Eliminar alumno");
-
