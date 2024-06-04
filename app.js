@@ -35,5 +35,6 @@ for(var i = 0; i < registro.length; i++){
     console.log("Edad: " + registro[i].edad);
     console.log("Zona de residencia: " + registro[i].zonaResidencia);
     console.log("Nombre del programa: " + registro[i].nombrePrograma);
+    //se coloca el correo electrónico poniendo el nombre del objeto y la propiedad
     console.log("Correo electrónico: " + registro[i].email);
 }
