@@ -14,7 +14,6 @@ var opcion = prompt("Seleccione una opción: \n 1. Agregar registro \n 2. Consul
 
 if (opcion === "1") {
     alert("Agregar alumno nuevo");
-    
 }else if(opcion === "2"){
     alert("Mostrar el registro");
 }else if(opcion === "3"){
@@ -26,16 +25,23 @@ if (opcion === "1") {
 }
 
 var registro = [
-    {nombre: "Salvador Mora", edad: "30", zonaResidencia: "CDMX", nombrePrograma: "Desarrollador Front End De Cero a Pro", email: "salvador@ebac.mx"},
-    {nombre: "Maria Hubert", edad: "34", zonaResidencia: "Edo Mex", nombrePrograma: "Desarollo Back End con Python", email: "maria@ebac.mx"}
+    {nombre: "Salvador Mora", edad: "30", zonaResidencia: "CDMX", nombrePrograma: "Desarrollador Front End De Cero a Pro", email: "salvador@ebac.mx", seguroSocial: "Sí"},
+    {nombre: "Maria Hubert", edad: "34", zonaResidencia: "Edo Mex", nombrePrograma: "Desarollo Back End con Python", email: "maria@ebac.mx", seguroSocial: "No"},
 ];
 
 for(var i = 0; i < registro.length; i++){
     console.log("Nombre: " + registro[i].nombre);
+    //Para imprimir solo la edad se utiliza el ".edad" después del nombre del objeto "registro[i]""
     console.log("Edad: " + registro[i].edad);
     console.log("Zona de residencia: " + registro[i].zonaResidencia);
     console.log("Nombre del programa: " + registro[i].nombrePrograma);
     //se coloca el correo electrónico poniendo el nombre del objeto y la propiedad
     console.log("Correo electrónico: " + registro[i].email);
+    if (registro[i].seguroSocial === "Sí"){
+        registro[i].seguroSocial = true;
+    }else if (registro[i].seguroSocial === "No"){
+        registro[i].seguroSocial = false;
+    }
+    console.log("Cuenta con seguro social: " + registro[i].seguroSocial);
     console.log(" ");
 }
