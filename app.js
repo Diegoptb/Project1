@@ -17,8 +17,8 @@ function agregarAlumno(){
     var nombrePrograma = prompt("Ingresa el programa a estudiar")
     var email = prompt("Ingresa el correo electrónico")
     var nuevoAlumno = {nombre: nombre, edad: edad, zonaResidencia: zonaResidencia, nombrePrograma: nombrePrograma, email: email};
-
     registro.push(nuevoAlumno);
+    alert("Alumno agregado correctamente");
 }
 
 function consultarRegistros(){
@@ -51,7 +51,7 @@ if (opcion === "1") {
 
 
     var continuar = prompt("¿Desea realizar otra operación? (S/N)");
-} while(opcion === "s");
+} while(continuar === "s");
 
 
 
